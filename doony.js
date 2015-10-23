@@ -448,9 +448,9 @@ jQuery(function($) {
     // Load the Logo file, only if exists.
     // CSS for #ID "doony-logo" will limit the height of the logo to 33px.
     if (isUrlExists(logoFile)) {
-        logoHtml = "<img src='" + logoFile + "' height='33' width='33' id='doony-logo'>" + titleSeparator
+        logoHtml = "<img src='" + logoFile + "' height='40' width='40' id='doony-logo'>" + titleSeparator
     }
-    var titleLink = "<div id='doony-title'>" + logoHtml + domain + "</div>"
+    var titleLink = "<div id='doony-title'>" + logoHtml + " SugarCRM CI Server</div>"
     var doonyTitleLink = $('#jenkins-home-link');
     doonyTitleLink.html(titleLink);
     if (doonyTitleLink.length === 0) {
@@ -497,7 +497,7 @@ jQuery(function($) {
     if ($("#matrix").length) {
         // for some stupid reason jenkins fetches this with ajax so we need to
         // setinterval here to continue to retrieve it all the time
-        setInterval(function() {
+        /*setInterval(function() {
             var jobUrl = getJobUrl(window.location.pathname);
             if ($("#matrix .doony-downstream-link").length) {
                 // already updated this matrix div
@@ -518,7 +518,7 @@ jQuery(function($) {
                 }
               }
             });
-        }, 50);
+        }, 50);*/
     }
 
     // Replace the floaty ball with a better icon
