@@ -898,12 +898,12 @@ div.left-bar {
     content: ' ';
     display: block;
     position: absolute;
-    left: 0;
-    top: 0;
+    right: 0;
+    top: 75px;
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.2;
     background-image: url('/userContent/logo.svg');
     background-repeat: no-repeat;
     -ms-background-size: 400px;
