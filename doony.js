@@ -448,7 +448,7 @@ jQuery(function($) {
     // Load the Logo file, only if exists.
     // CSS for #ID "doony-logo" will limit the height of the logo to 33px.
     if (isUrlExists(logoFile)) {
-        logoHtml = "<img src='" + logoFile + "' id='doony-logo'>" + titleSeparator
+        logoHtml = "<img src='" + logoFile + "' height='33' width='33' id='doony-logo'>" + titleSeparator
     }
     var titleLink = "<div id='doony-title'>" + logoHtml + domain + "</div>"
     var doonyTitleLink = $('#jenkins-home-link');
@@ -462,7 +462,7 @@ jQuery(function($) {
         }
     }
     var color = colors[Math.abs(hashCode(domain)) % colors.length];
-    $("#top-panel, #header").css('background-color', '#EAE9EA');
+    $("#top-panel, #header").css('background-color', '#C4C3C4');
 
     // Remove icons from the left hand menu and strip nbsp's
     $(".task").each(function() {
