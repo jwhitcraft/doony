@@ -894,7 +894,7 @@ div.left-bar {
   display: none;
 }
 
-#page-body:before {
+#page-body:after {
     content: ' ';
     display: block;
     position: absolute;
