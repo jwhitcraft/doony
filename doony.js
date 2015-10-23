@@ -442,7 +442,7 @@ jQuery(function($) {
 
 
     var domain = getSubdomain(window.location.hostname);
-    var logoFile = "/userContent/logo.png"
+    var logoFile = "/userContent/logo.svg"
     var titleSeparator = " - "
     var logoHtml = ""
     // Load the Logo file, only if exists.
@@ -511,10 +511,12 @@ jQuery(function($) {
                 $(item).after(getCallout(message, null));
             });
             $.getJSON(jobUrl + 'api/json?tree=activeConfigurations[name]', function(data) {
+              if (JSON.stringify(data) !== "{}" && 'activeConfigurations' in data) {
                 for (var i = 0; i < data.activeConfigurations.length; i++) {
                     var config = data.activeConfigurations[i];
                     updateConfiguration(jobUrl, config.name + '/');
                 }
+              }
             });
         }, 50);
     }
