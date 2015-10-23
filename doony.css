@@ -748,7 +748,8 @@ a.yuimenulabel, a.yuimenuitemlabel,
 }
 
 #doony-logo {
-  height: 33px;
+  height: 40px;
+  width: 40px;
 }
 
 #jenkins-home-link {
