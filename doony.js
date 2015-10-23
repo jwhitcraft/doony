@@ -448,7 +448,7 @@ jQuery(function($) {
     // Load the Logo file, only if exists.
     // CSS for #ID "doony-logo" will limit the height of the logo to 33px.
     if (isUrlExists(logoFile)) {
-        logoHtml = "<img src='" + logoFile + "' height='40' width='40' id='doony-logo'>"
+        logoHtml = "<img src='" + logoFile + "' id='doony-logo'>"
     }
     var titleLink = "<div id='doony-title'>" + logoHtml + " SugarCRM CI Server</div>"
     var doonyTitleLink = $('#jenkins-home-link');
