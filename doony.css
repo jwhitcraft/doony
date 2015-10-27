@@ -675,10 +675,6 @@ textarea {
   border-top: 1px solid #ddd;
 }
 
-#buildHistory .build-row:last-child {
-  display: none;
-}
-
 .healthReport img {
   vertical-align: top;
   padding-top: 1px;
