@@ -900,8 +900,8 @@ div.left-bar {
     position: absolute;
     right: 0;
     top: 75px;
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 400px;
     z-index: -1;
     opacity: 0.2;
     background-image: url('/userContent/logo.svg');
