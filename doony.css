@@ -908,3 +908,7 @@ div.left-bar {
     -webkit-background-size: 400px;
     background-size: 400px;
 }
+
+#buildHistory .build-row-cell {
+  width: 100%;
+}
